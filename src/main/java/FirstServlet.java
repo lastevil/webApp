@@ -12,7 +12,7 @@ import java.util.Arrays;
 @WebServlet(name = "FirstServlet", urlPatterns = "/firstApp")
 public class FirstServlet extends HttpServlet {
     private final String[] titles = {"Апельсины", "Яблоки", "Груши", "Мандарины", "Бананы",
-            "Манго", "Личи", "Абрикос", "Персик", "Помело"};
+            "Манго", "Личи", "Абрикос", "Персик", "Помело"}; // набор названий продуктов
     private Product[] products;
     private final static String ENCODING_UTF_8 = "UTF-8";
 
