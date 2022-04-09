@@ -1,7 +1,7 @@
 public class Product {
-    private int id;
-    private String title;
-    private double coast;
+    private final int id;
+    private final String title;
+    private final double coast;
 
     public Product(int id, String title, double coast) {
         this.id=id;
@@ -11,9 +11,9 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id = '" + id + "\'" +
-                ", title='" + title + '\'' +
+        return
+                "{ id = '" + id + "'" +
+                ", title='" + title + "'" +
                 ", coast=" + coast +
                 "}";
     }
