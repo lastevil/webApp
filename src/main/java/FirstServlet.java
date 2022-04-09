@@ -22,7 +22,7 @@ public class FirstServlet extends HttpServlet {
         resp.setContentType("text/html; charset=UTF-8"); //после этого не переводит на новую строку но отображает Русский
         resp.setCharacterEncoding(ENCODING_UTF_8);
          products = new Product[10];
-        double scale = Math.pow(10, 2);
+        double scale = Math.pow(10, 2);//округление до 2х знаков
         for (int i =0;i<products.length;i++) {
             products[i]=new Product(i+1,
                     titles[(int)Math.round(Math.random()*(titles.length-1))],
